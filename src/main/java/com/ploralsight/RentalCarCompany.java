@@ -1,11 +1,12 @@
 package com.ploralsight;
 
 // use scanner to get info from user
+
 import java.util.Scanner;
 
 public class RentalCarCompany {
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
 
 
         //create variables needed to solve
@@ -24,18 +25,18 @@ public class RentalCarCompany {
         // ask if they want an electronic toll tag
         System.out.print("Is true that you want an electronic toll tag? (True or False)");
         boolean electronicTag = input.nextBoolean();
-        if (electronicTag){
+        if (electronicTag) {
             totalCost += (3.95 * rentalDays);
         }
 
         System.out.print("Is true that you want a Gps? (True or False)");
         boolean gps = input.nextBoolean();
-        if (gps){
+        if (gps) {
             totalCost += (2.95 * rentalDays);
         }
         System.out.print("Is true that you want Road side Assistance Help? (True or False)");
         boolean roadsideAssistance = input.nextBoolean();
-        if (roadsideAssistance){
+        if (roadsideAssistance) {
             totalCost += (3.95 * rentalDays);
         }
         // ask their age and charge them correctly
@@ -44,7 +45,7 @@ public class RentalCarCompany {
         if (age < 25) {
             totalCost *= 1.3;
         }
-        System.out.print(totalCost);
+        System.out.printf("Total Cost: $%.2f", totalCost);
     }
 
 
